@@ -58,7 +58,7 @@ app.get('/', async (req, res) => {
 });
 
 
-app.get("/get-all-books", async (req, res) => {
+app.get("/get-all-data", async (req, res) => {
   try {
     const data = await datamodel.find().sort({ createdAt: -1 });
     return res.json({
@@ -74,5 +74,5 @@ app.get("/connect/telegram", (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log("Server is running on port 8000");
+  console.log("Server is running on port 4000");
 });
