@@ -15,10 +15,10 @@ const countdown = setInterval(() => {
 
 
 function fetched() {
-  console.log(`${window.location.href}get-all-data`);
+  const url = `${window.location.href}get-all-data`
 
 
-  fetch("http://localhost:4000/get-all-data")
+  fetch(url)
     .then(res => res.json())
     .then((result) => {
       console.log(result)
