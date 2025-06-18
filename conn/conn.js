@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 async function conn() {
-  const url = "mongodb+srv://data:data123@cluster0.eag7v.mongodb.net/"
+  const url = ""
   try {
     await mongoose.connect(url)
     console.log("Database Connected");
